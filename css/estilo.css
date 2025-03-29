@@ -1,37 +1,14 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-.container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.3fr 1.7fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "banner banner banner banner banner banner banner banner banner banner banner banner"
-      "menu menu menu menu menu menu menu menu menu menu menu menu"
-      "contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
-      "contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
-      "contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
-      "contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
-      "contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
-      "footer footer footer footer footer footer footer footer footer footer footer footer";
-  }
-  
-  .container {
+/* General */
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-
+/* Banner */
 .banner {
     width: 100%;
-    
     padding: 10px;
     text-align: center;
 }
@@ -40,7 +17,7 @@
     max-width: 200px;
 }
 
-
+/* Menú */
 .menu {
     width: 100%;
     background: #333;
@@ -65,7 +42,7 @@
     display: block;
 }
 
-
+/* Submenú */
 .submenu {
     display: none;
     position: absolute;
@@ -90,7 +67,7 @@
     display: block;
 }
 
-
+/* Menú responsive */
 #menu-toggle {
     display: none;
 }
@@ -103,8 +80,79 @@
     cursor: pointer;
 }
 
+/* Contenido */
+.contenido {
+    width: 90%;
+    padding: 20px;
+    text-align: justify;
+}
 
+/* Sección superior */
+.superior {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+/* Imagen */
+.imagen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+/* Texto */
+.contenido-texto h2 {
+    color: #191729;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contenido-texto {
+    padding: 0;
+}
+
+.contenido-texto p {
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+/* Sección inferior */
+.inferior {
+    margin-top: 30px;
+    font-size: 17px;
+    padding: 20px;
+    border-top: 1px solid #e4e4e4;
+}
+
+.inferior ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.inferior li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background: #222;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     .menu-items {
         flex-direction: column;
@@ -137,83 +185,18 @@
     .menu-items li:hover .submenu {
         display: block;
     }
-}
 
+    /* Ajustes para pantallas pequeñas */
+    .superior {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.contenido {
-    
-    
-    padding: 20px 20px 20px 20px;
-  
-    height: 100%;
-    text-align: justify;
-    
+    .imagen {
+        text-align: center;
+    }
 
-}
-
-.superior {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-.imagen{
-    
-  
-    display: flex;
-    
-    
-    width: 100%;
-    text-align: center;
-    
-}
-
-.imagen img {
-    max-width: 100%;
-    border-radius: 10px;
-    max-width: 100%;
-    height: auto;
-    display: block; 
-    margin: 0 auto;
-    
-}
-
-.contenido-texto h2 {
-    color: #191729;
-    font-size: 22px;
-    margin-bottom: 10px;
-    
-}
-.contenido-texto{
-    padding: 0px 0px 0px 0px;
-}
-.contenido-texto p {
-    font-size: 17px;
-    line-height: 1.5;
-    padding: 20px;
-}
-
-.inferior {
-    margin-top: 30px;
-    font-size: 17px;
-    padding: 20px;
-    border-top: 1px solid #e4e4e4;
-}
-
-.inferior ul {
-    margin-top: 10px;
-    padding-left: 20px;
-}
-
-.inferior li {
-    margin-bottom: 8px;
-}
-
-
-.footer {
-    width: 100%;
-    background: #222;
-    color: white;
-    padding: 10px;
-    text-align: center;
+    .contenido-texto {
+        text-align: center;
+    }
 }
