@@ -86,7 +86,7 @@
 
 @media (max-width: 768px) {
     .menu {
-        position: relative;
+        position: left;
     }
 
     .menu-icon {
