@@ -1,15 +1,23 @@
 
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; 
     font-family: Arial, sans-serif;
 }
+
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
 }
 
 
@@ -29,6 +37,7 @@ body {
     background: #333;
     position: relative;
 }
+
 
 .menu-icon {
     display: none;
@@ -84,6 +93,7 @@ body {
     color: white;
 }
 
+
 .has-submenu:hover .submenu {
     display: block;
 }
@@ -113,7 +123,7 @@ body {
         display: flex;
     }
 
-  
+   
     .submenu {
         position: relative;
         width: 100%;
@@ -127,11 +137,19 @@ body {
     }
 }
 
-
 .contenido {
-    width: 90%;
+    width: 100%;
+    max-width: 1200px; 
     padding: 20px;
     text-align: justify;
+}
+
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 
