@@ -21,123 +21,199 @@
       "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
   
-  .banner { grid-area: banner; }
-  
-  .menu { grid-area: menu; }
-  
-  .contenido { grid-area: contenido; }
-  
-  .footer { grid-area: footer; }
-  
-  
-  .banner { grid-area: banner;
-display: flex;
-justify-content: center;
-
-
-}
-  
-  .menu { grid-area: menu;
-
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-background-color: #e6e6fd;
-padding: 16px 20px;
-list-style: none;
-font-size: 20px;
-
-  
-}
-
-.menu a{
-    text-decoration: none;
-    color: #000000;
-    float: left;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-padding: 14px 16px;
-text-decoration: none;
+}
 
+
+.banner {
+    width: 100%;
     
+    padding: 10px;
+    text-align: center;
 }
-.menu a:hover{
-    background-color: #d2cdff;
+
+.banner img {
+    max-width: 200px;
 }
-.menu li {
+
+
+.menu {
+    width: 100%;
+    background: #333;
     position: relative;
-    display: inline-block;
-    
 }
-.menu li:hover ul{
+
+.menu-items {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.menu-items li {
+    position: relative;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
     display: block;
-    
-
 }
 
-    
 
-.menu ul {
+.submenu {
     display: none;
     position: absolute;
+    background: #444;
     top: 100%;
-    background-color: #e6e6fd;
-    
-
+    left: 0;
+    list-style: none;
+    width: 150px;
 }
-.menu li ul a{
-    text-decoration: none;
-    display: block;
+
+.submenu li {
+    text-align: left;
+}
+
+.submenu a {
     padding: 10px;
-    
-    color: rgb(0, 0, 0);
+    display: block;
+    color: white;
 }
-.menu li ul a:hover{
-    background-color: #d2cdff;
 
+.menu-items li:hover .submenu {
+    display: block;
 }
- 
-  
-  
-  .footer { grid-area: footer;
+
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        background: #333;
+        position: absolute;
+        top: 100%;
+        left: 0;
     }
-  
-  .contenido { grid-area: contenido;
-    margin: 0px 0;
-    padding: 5px 10px 10px 10px;
-       
-}
-.contenido-texto{
-    text-align: justify;
-    padding: 90px 10px 10px 10px;
-    border-radius: 10px;
-    height: 100%;
-    font-size: 17px;
 
-    
+    .menu-icon {
+        display: block;
+        text-align: center;
+        background: #333;
+        padding: 10px;
+    }
+
+    #menu-toggle:checked + .menu-items {
+        display: flex;
+    }
+
+    .submenu {
+        position: static;
+        display: none;
+        width: 100%;
+        background: #444;
+    }
+
+    .menu-items li:hover .submenu {
+        display: block;
+    }
 }
+
+
+.contenido {
+    
+    
+    padding: 20px 20px 20px 20px;
+  
+    height: 100%;
+    text-align: justify;
+    
+
+}
+
 .superior {
     display: flex;
     gap: 20px;
     align-items: flex-start;
-  }
-
-
-.subtitulo{
-    color: #191729; 
-    font-size: 20px; 
-    font-weight: bold;
-    
+    flex-wrap: wrap;
 }
-.inferior{
-    margin-top: 30px;
-  font-size: 17px;
-  padding: 20px;
-  border-radius: 0px;
-  border-top: 1px solid #e4e4e4;
-
-}
-
-
 .imagen{
-   
-   
     
-} 
+  
+    display: flex;
+    
+    
+    width: 100%;
+    text-align: center;
+    
+}
+
+.imagen img {
+    max-width: 100%;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin: 0 auto;
+    
+}
+
+.contenido-texto h2 {
+    color: #191729;
+    font-size: 22px;
+    margin-bottom: 10px;
+    
+}
+.contenido-texto{
+    padding: 0px 0px 0px 0px;
+}
+.contenido-texto p {
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.inferior {
+    margin-top: 30px;
+    font-size: 17px;
+    padding: 20px;
+    border-top: 1px solid #e4e4e4;
+}
+
+.inferior ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.inferior li {
+    margin-bottom: 8px;
+}
+
+
+.footer {
+    width: 100%;
+    background: #222;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
