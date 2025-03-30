@@ -9,6 +9,7 @@ html, body {
     width: 100%;
     overflow-x: hidden; 
     font-family: Arial, sans-serif;
+    
 }
 
 
@@ -96,7 +97,7 @@ padding: 20px;
     padding: 14px 16px;
     display: block;
     font-size: 18px;
-    transition: background 0.3s ease;
+    
 }
 
 
