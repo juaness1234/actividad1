@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <header class="banner">
+            <a href="index.html">
+                <img src="img/Captura de pantalla 2025-03-29 222821.png" alt="Logo">
+            </a>
+        </header>
+
+        <nav class="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">☰</label>
+            
+            <ul class="menu-items">
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#">Indice</a>
+                    <ul class="submenu">
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="metodos.html">Principales Métodos Numéricos</a></li>
+                        <li><a href="implementacion.html">Implementacion</a></li>
+                        <li><a href="metodos.html">Principales Métodos Numéricos</a></li>
+                        <li><a href="implementacion.html">implementacion</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Multimedia</a>
+                    <ul class="submenu">
+                        <li><a href="#Intro">Introducción</a></li>
+                        <li><a href="#f">Tema 1</a></li>
+                        <li><a href="#fw">Tema 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Actividades</a>
+                    <ul class="submenu">
+                        <li><a href="#Intro">Introducción</a></li>
+                        <li><a href="#f">Tema 1</a></li>
+                        <li><a href="#fw">Tema 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="autores.html">Autores</a></li>
+            </ul>
+        </nav>
+
+        <div class="contenido">
+            <div class="superior">
+                <br>
+               
+                <h2 class="tec" style="text-align: center;">Implementación Computacional</h2>
+                
+                <p>Implementación Computacional de Métodos Numéricos
+                    La implementación computacional de los métodos numéricos ha permitido resolver problemas matemáticos complejos con rapidez y precisión. Desde los primeros algoritmos programados en Fortran y C en las décadas de 1950 y 1960 hasta las bibliotecas especializadas en Python, MATLAB y R, los avances en hardware y software han optimizado la ejecución de cálculos numéricos. Sin embargo, debido a la representación finita de los números en las computadoras, los errores de redondeo y estabilidad numérica siguen siendo desafíos importantes en la programación de estos algoritmos. Métodos como la Eliminación de Gauss, la Regla de Simpson y el método de Newton-Raphson han sido ampliamente utilizados y optimizados en diferentes aplicaciones científicas e industriales.
+                    <br><br><br>
+
+<strong>Implementación de la Regla de Simpson.</strong> <a href="#simson">(ver)</a>
+<br>
+La Regla de Simpson es un método de integración numérica que permite calcular aproximaciones precisas de integrales definidas. Su formulación se basa en la interpolación cuadrática, aproximando una función mediante una parábola y evaluando su área. Existen dos versiones principales: Simpson 1/3 y Simpson 3/8, cada una con diferentes grados de precisión.
+<br><br>
+
+Computacionalmente, este método se implementa en la mayoría de los lenguajes de programación mediante la división del intervalo de integración en segmentos pares y la aplicación de la fórmula correspondiente. En MATLAB la función quad() usa métodos adaptativos basados en Simpson. A pesar de su eficiencia, la Regla de Simpson tiene limitaciones cuando se aplica a funciones con alta variabilidad en intervalos pequeños, donde métodos como la cuadratura adaptativa pueden ofrecer mejores resultados.
+<br><br><br>
+
+<strong>Implementación de la Eliminación de Gauss.</strong> <a href="#gauss">(ver)</a>
+<br>
+La Eliminación de Gauss es un algoritmo fundamental en álgebra lineal numérica que permite resolver sistemas de ecuaciones lineales mediante operaciones fila. Su eficiencia y estabilidad han hecho que sea el método más utilizado para resolver sistemas de ecuaciones en aplicaciones de ingeniería, física y economía.
+<br><br>
+
+En la práctica, este método se implementa mediante la conversión de una matriz aumentada a su forma escalonada mediante eliminación progresiva, seguida de sustitución regresiva para encontrar la solución del sistema. En MATLAB, A\b es la forma más eficiente de resolver sistemas lineales, ya que el software elige automáticamente el mejor método numérico disponible, a menudo basado en eliminación de Gauss o descomposición LU. 
+<br><br>
+
+Un desafío en la implementación de este método es la presencia de matrices mal condicionadas, donde pequeños errores de redondeo pueden amplificarse y afectar la precisión de los resultados. Para mitigar este problema, se utilizan técnicas como el pivoteo parcial o total, que mejoran la estabilidad al reorganizar las filas de la matriz para maximizar la precisión en cada paso.
+<br><br><br>
+
+<strong>Implementación del Método de Newton-Raphson.</strong> <a href="#newton">(ver)</a>
+<br>
+El método de Newton-Raphson es una de las técnicas más eficientes para encontrar raíces de ecuaciones no lineales. Su formulación se basa en la aproximación de la función mediante su derivada y la actualización iterativa de la solución. Sin embargo, este método requiere el cálculo de la derivada de la función, lo que en algunos casos puede aumentar la complejidad computacional. 
+<br><br>
+
+Computacionalmente, Newton-Raphson se implementa con estructuras iterativas que ejecutan sucesivas aproximaciones hasta alcanzar una tolerancia aceptable. MATLAB cuenta con implementaciones optimizadas mediante la función fzero(), que internamente utiliza Newton-Raphson junto con otros métodos de optimización.
+<br><br>
+
+Uno de los principales problemas del método es su dependencia de una buena estimación inicial, ya que una mala elección del punto de inicio puede llevar a divergencias o a la convergencia a una raíz incorrecta. Para mejorar su estabilidad, se combinan técnicas como la bisección inicial o la modificación del método secante, que pueden aumentar la probabilidad de convergencia en problemas complejos.
+<br><br>
+
+<strong>Optimización y Computación Paralela en Métodos Numéricos.</strong><br>
+Con la evolución de la computación, los métodos numéricos han sido optimizados mediante el uso de procesamiento paralelo y computación distribuida. Algoritmos como la eliminación de Gauss pueden beneficiarse del uso de procesadores multinúcleo, donde los cálculos en matrices grandes se dividen en múltiples hilos de ejecución. En el caso del método de Newton-Raphson, las unidades de procesamiento gráfico (GPU) han permitido acelerar la evaluación de funciones y derivadas, especialmente en aplicaciones de inteligencia artificial y simulación numérica.
+<br><br>
+
+En el futuro, la computación cuántica podría revolucionar los métodos numéricos, con algoritmos que prometen resolver problemas de integración, álgebra lineal y optimización con una eficiencia inalcanzable para las computadoras clásicas. La investigación en este campo sigue en desarrollo, pero su impacto podría transformar la manera en que se abordan los problemas matemáticos y computacionales a gran escala.
+                
+                
+<br><br><br>
+<section id="simson">
+    <h2>Ejemplos de implementación:</h2>
+    <p><strong>Regla de Simpson 1/3.</strong></p><br>
+<p>Calculamos la integral de f(x)=x^2-4 en el intervalo [0,3] utilizando la Regla de Simpson 1/3.</p>
+<br>
+<img src="img/Captura de pantalla 2025-03-30 142553.png" alt="">
+
+</section>
+<br><br><br>
+<section id="gauss">
+    <p><strong>Eliminación de Gauss.</strong></p><br>
+    <p>Resolvemos el sistema de ecuaciones:
+        <br><br>    <img src="img/Captura de pantalla 2025-03-30 144215.png" alt="">
+    </p>
+    <br>
+    <img src="img/Captura de pantalla 2025-03-30 150248.png" alt="">
+</section>
+<br><br><br>
+<section id="newton">
+    <p><strong>Método de Newton-Raphson.</strong><br><br>
+        <p>Buscamos la raíz de f(x)=x^2-4, que corresponde a x = ±2  usando Newton-Raphson con una estimación inicial de x_0=3</p>
+    </p>
+    <br>
+    <img src="img/Captura de pantalla 2025-03-30 150858.png" alt="">
+</section>
+
+
+
+
+                    <br><br><br><br>
+
+
+    </div>
+    </div>
+    <footer class="footer">
+        <p>© 2025 Ingeniería de Sistemas</p>
+    </footer>
+</body>
+</html>
