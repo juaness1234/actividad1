@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <header class="banner">
+            <a href="index.html">
+                <img src="img/Captura de pantalla 2025-03-29 222821.png" alt="Logo">
+            </a>
+        </header>
+
+        <nav class="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">☰</label>
+            
+            <ul class="menu-items">
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#">Indice</a>
+                    <ul class="submenu">
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="metodos.html">Principales Métodos Numéricos</a></li>
+                        <li><a href="implementacion.html">Implementacion</a></li>
+                        <li><a href="Impacto.html">Impacto</a></li>
+                        <li><a href="matlab.html">Matlab</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Multimedia</a>
+                    <ul class="submenu">
+                        <li><a href="#Intro">Introducción</a></li>
+                        <li><a href="#f">Tema 1</a></li>
+                        <li><a href="#fw">Tema 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Actividades</a>
+                    <ul class="submenu">
+                        <li><a href="#Intro">Introducción</a></li>
+                        <li><a href="#f">Tema 1</a></li>
+                        <li><a href="#fw">Tema 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="autores.html">Autores</a></li>
+            </ul>
+        </nav>
+
+        <div class="contenido">
+            <div class="superior">
+                <br>
+               
+                <h2 class="tec" style="text-align: center;">El Impacto de los Métodos Numéricos en Nuestra Sociedad.</h2>
+              
+<p>Estos métodos han sido fundamentales para el avance de diversas disciplinas como la ingeniería, la economía, la biomedicina y la inteligencia artificial. Sin ellos, muchas tecnologías modernas no existirían o serían demasiado ineficientes. A continuación, exploramos cómo los métodos numéricos afectan distintos aspectos de nuestra sociedad.
+<br><br>
+</p>
+<h3>Predicción del Clima y Cambio Climático.</h3>
+<p>El clima es un sistema altamente complejo que depende de múltiples variables como la temperatura, la humedad, la presión atmosférica, la radiación solar, la velocidad del viento y la composición química de la atmósfera. Estas variables interactúan de manera dinámica y no lineal, lo que hace que la predicción del clima sea un desafío matemático y computacional. Para predecir el clima con precisión, los científicos utilizan modelos matemáticos basados en ecuaciones diferenciales parciales (EDP) <strong class="cita">(Ver imagen 1)</strong>, las cuales describen el comportamiento de la atmósfera a través del tiempo y el espacio.
+
+    Estos modelos climáticos son simulaciones computacionales que dividen la atmósfera en pequeñas celdas tridimensionales, donde cada celda representa una porción del aire con propiedades físicas específicas. Las ecuaciones diferenciales gobiernan la evolución de estas celdas a lo largo del tiempo, permitiendo calcular el comportamiento del clima en diferentes regiones del planeta.
+</p>
+<br>
+<div class="imagen">
+    <div class="item">
+        <figure>
+<img src="img/BendingCircularPlate.png" width="500px" height="400px" alt="">
+        </figure>
+        <div class="item-text">
+            <strong>Imagen 1. la solución mostrada fue obtenida numéricamente mediante <a href="https://es.wikipedia.org/wiki/ANSYS">Ansys</a>.</strong>
+
+        </div>
+
+    </div>
+    
+
+ </div>
+ <br><br>
+ <h3>Ingeniería y Construcción.</h3>
+ <p>La ingeniería moderna depende en gran medida de los métodos numéricos para diseñar y evaluar estructuras. Los ingenieros utilizan modelos matemáticos para predecir el comportamiento de materiales y estructuras bajo diferentes condiciones de carga, lo que permite optimizar diseños y garantizar la seguridad antes de la construcción. Entre estos métodos, el método de elementos finitos (FEM) es una de las herramientas más utilizadas en el análisis estructural, ya que permite dividir una estructura compleja en pequeñas partes llamadas elementos finitos, sobre los cuales se aplican ecuaciones matemáticas para simular su comportamiento bajo diversas condiciones. Este método es crucial en la construcción de puentes, rascacielos, represas, aviones y automóviles, ya que ayuda a evaluar la resistencia de los materiales, la distribución de tensiones y deformaciones, y la respuesta ante cargas dinámicas como viento, sismos y tráfico vehicular. Gracias a su flexibilidad, el FEM también se aplica en la biomecánica para modelar huesos y prótesis, en la industria automotriz para pruebas de impacto y en el sector aeroespacial para optimizar el diseño de aeronaves y cohetes. Su integración con herramientas computacionales como MATLAB, ANSYS y Abaqus permite realizar simulaciones avanzadas, reduciendo costos y tiempos en la fase de desarrollo de proyectos de ingeniería.</p>
+<br><br>
+ <div class="imagen">
+    <div class="item">
+        <figure>
+<img src="img/FAE_visualization.jpg" width="500px" height="400px" alt="">
+        </figure>
+        <div class="item-text">
+            <strong>Imagen 2. Visualización de una simulación FEM <br> de la deformación de un coche tras un choque frontal asimétrico.</strong>
+
+        </div>
+
+    </div>
+    
+
+ </div>
+<br><br>
+<h3>Economía y Finanzas.</h3>
+<p>En el mundo financiero, los métodos numéricos desempeñan un papel crucial en la toma de decisiones estratégicas, el análisis de riesgos y la optimización de inversiones. Las entidades bancarias, los fondos de inversión y los mercados bursátiles dependen de algoritmos avanzados para procesar grandes volúmenes de datos en tiempo real, lo que les permite detectar patrones, prever tendencias y tomar decisiones informadas. La interpolación numérica se utiliza para estimar valores intermedios en series de datos financieros, mientras que la regresión numérica ayuda a modelar la relación entre variables económicas, como <br><br>
+
+    Uno de los métodos más utilizados en las finanzas cuantitativas es el método de Monte Carlo, que permite simular diferentes escenarios de inversión y evaluar el impacto de la volatilidad en los precios de los activos. Este método es ampliamente empleado en la valoración de derivados financieros, la gestión de carteras y la modelación de riesgos. Otro enfoque importante es el método de mínimos cuadrados, que se usa para ajustar modelos de predicción en series de tiempo y calcular tendencias en mercados bursátiles. Además, los métodos iterativos, como Gauss-Seidel, se aplican en modelos macroeconómicos para prever la evolución de variables clave como el crecimiento económico y el desempleo. <br><br>
+    
+    El desarrollo de la inteligencia artificial y el aprendizaje automático ha permitido la integración de métodos numéricos con algoritmos de predicción más sofisticados. Técnicas como las redes neuronales y la optimización estocástica han revolucionado el sector financiero, permitiendo el diseño de sistemas de trading automatizado que ejecutan operaciones en milisegundos y maximizan ganancias basándose en modelos probabilísticos. En la gestión de riesgos, los bancos utilizan simulaciones numéricas para calcular el Valor en Riesgo (VaR) y medir la probabilidad de pérdidas en escenarios adversos. <br><br>
+    
+    Gracias a los métodos numéricos, las finanzas modernas han evolucionado hacia un enfoque más preciso y eficiente, donde las decisiones ya no se basan únicamente en la intuición, sino en modelos matemáticos capaces de analizar millones de datos en segundos. Esta transformación ha permitido mejorar la estabilidad de los mercados, optimizar estrategias de inversión y reducir la incertidumbre en la toma de decisiones económicas a nivel global.
+<br><br>
+<div class="imagen">
+    <div class="item">
+        <figure>
+<img src="img/Montecarlo.svg" width="500px" height="400px" alt="">
+        </figure>
+        <div class="item-text">
+            <strong>Imagen 2. Aplicación del método de Monte Carlo para determinar el área de un lago.</strong>
+
+        </div>
+
+    </div>
+    
+
+ </div>
+
+</p>
+
+<br><br><br><br><br><br>
+
+<p><h2>Bibliografía.</h2>
+    
+<li>Equipo Singular Bank. (2018, mayo 25). El método Montecarlo en finanzas. El blog de SelfBank by Singular Bank. <a href="https://acortar.link/ZYVNlV">https://acortar.link/ZYVNlV</a>  </li>
+<br>
+<li>(S/f). Researchgate.net. Recuperado el 30 de marzo de 2025, de <a href="https://acortar.link/c2rQGJ">https://acortar.link/c2rQGJ</a>  </li>
+<br>
+<li>Wikipedia contributors. (s/f-b). Método de Monte Carlo. Wikipedia, The Free Encyclopedia. <a href="https://acortar.link/JuiAtc">https://acortar.link/JuiAtc</a> </li>
+</p>
+
+
+
+                    <br><br><br><br>
+
+
+    </div>
+    </div>
+    <footer class="footer">
+        <p>© 2025 Ingeniería de Sistemas</p>
+    </footer>
+</body>
+</html>
