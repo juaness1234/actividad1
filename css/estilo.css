@@ -55,7 +55,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    justify-content: center;
+    justify-content: left;
   }
   
   .menu-items > li {
@@ -119,12 +119,28 @@
     flex: 1;
   }
   
-  
-  
-  .imagen, .contenido-texto {
+  .contenido-texto {
     flex: 1;
     min-width: 300px;
   }
+
+  
+  .imagen {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    
+  }
+  
+
+
+
+
+
+
+
+
+
   
   .imagen img {
     max-width: 100%;
@@ -141,7 +157,10 @@
   ul {
     padding-left: 20px;
   }
-  
+  .cita{
+    font-size: 18px;
+    color: #000;
+  }
   
   .footer {
     width: 100%;
