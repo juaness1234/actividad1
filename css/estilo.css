@@ -33,9 +33,11 @@ html, body {
 
 
 .menu {
+    list-style: none;
     width: 100%;
     background: #333;
     position: relative;
+padding: 20px;
 }
 
 
@@ -47,6 +49,9 @@ html, body {
     cursor: pointer;
     text-align: right;
 }
+
+    
+
 
 
 #menu-toggle {
@@ -62,14 +67,36 @@ html, body {
 }
 
 .menu-items li {
+    display: inline-block;
     position: relative;
 }
+.menu-items li:hover ul{
+    display: block;
 
+}
+.menu-items ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+}
+.menu-items ul li {
+    width: 100%;
+}
+.menu-items ul a:hover {
+    background: #ff7f2a;
+}
+.menu-items > li:hover > a {
+    background: #ff7f2a;
+}
 .menu-items a {
     text-decoration: none;
     color: white;
     padding: 14px 16px;
     display: block;
+    font-size: 18px;
+    transition: background 0.3s ease;
 }
 
 
@@ -96,6 +123,7 @@ html, body {
 
 .has-submenu:hover .submenu {
     display: block;
+    background-color: antiquewhite;
 }
 
 
