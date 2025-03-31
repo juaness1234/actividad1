@@ -28,7 +28,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     text-align: center;
 }
 
@@ -50,19 +50,21 @@ body {
     font-weight: bold;
 }
 
-label {
+.label-texto {
+    
     display: block;
-    background: #fff;
+    background: #ffffff;
     padding: 8px;
     margin: 5px 0;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #f2f3f5;
     cursor: pointer;
     transition: 0.3s;
 }
 
-label:hover {
-    background: #e6f7ff;
+.label-texto :hover {
+    background: #b4dadd;
+
 }
 
 .correcto {
@@ -112,20 +114,11 @@ button:hover {
     font-weight: bold;
 }
 
-label {
-    display: block;
-    background: #fff;
-    padding: 8px;
-    margin: 5px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    transition: 0.3s;
-}
 
-label:hover {
-    background: #e6f7ff;
-}
+
+
+
+
 
 .respuesta {
     display: none;
@@ -151,10 +144,4 @@ label:hover {
     display: inline-block;
 }
 
-@media (max-width: 600px) {
-    .contenedor {
-        width: 90%;
-        padding: 15px;
-    }
-}
 
