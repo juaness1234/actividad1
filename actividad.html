@@ -73,37 +73,37 @@
         <form id="formulario">
             <div class="pregunta">
                 <p>1. ¿Cuál de los siguientes métodos se usa para encontrar raíces de ecuaciones?</p>
-                <label><input type="radio" name="p1" value="incorrecto"> Método de Gauss-Seidel</label>
-                <label><input type="radio" name="p1" value="correcto"> Método de Bisección</label>
-                <label><input type="radio" name="p1" value="incorrecto"> Transformada de Fourier</label>
+                <label class="label-texto"><input type="radio" name="p1" value="incorrecto"> Método de Gauss-Seidel</label>
+                <label class="label-texto"> <input type="radio" name="p1" value="correcto"> Método de Bisección</label>
+                <label class="label-texto"> <input type="radio" name="p1" value="incorrecto"> Transformada de Fourier</label>
             </div>
 
             <div class="pregunta">
                 <p>2. ¿Qué técnica numérica se basa en la aproximación de derivadas?</p>
-                <label><input type="radio" name="p2" value="correcto"> Método de Euler</label>
-                <label><input type="radio" name="p2" value="incorrecto"> Regresión Lineal</label>
-                <label><input type="radio" name="p2" value="incorrecto"> Integración por partes</label>
+                <label class="label-texto"><input type="radio" name="p2" value="correcto"> Método de Euler</label>
+                <label class="label-texto"><input type="radio" name="p2" value="incorrecto"> Regresión Lineal</label>
+                <label class="label-texto"><input type="radio" name="p2" value="incorrecto"> Integración por partes</label>
             </div>
 
             <div class="pregunta">
                 <p>3. ¿Cuál es un método iterativo para resolver sistemas de ecuaciones lineales?</p>
-                <label><input type="radio" name="p3" value="correcto"> Método de Gauss-Seidel</label>
-                <label><input type="radio" name="p3" value="incorrecto"> Método de Bisección</label>
-                <label><input type="radio" name="p3" value="incorrecto"> Transformada de Laplace</label>
+                <label class="label-texto"><input type="radio" name="p3" value="correcto"> Método de Gauss-Seidel</label>
+                <label class="label-texto"><input type="radio" name="p3" value="incorrecto"> Método de Bisección</label>
+                <label class="label-texto"><input type="radio" name="p3" value="incorrecto"> Transformada de Laplace</label>
             </div>
 
             <div class="pregunta">
                 <p>4. ¿Cuál de estos métodos numéricos se usa en interpolación?</p>
-                <label><input type="radio" name="p4" value="incorrecto"> Método de Newton-Raphson</label>
-                <label><input type="radio" name="p4" value="correcto"> Método de Lagrange</label>
-                <label><input type="radio" name="p4" value="incorrecto"> Algoritmo de Dijkstra</label>
+                <label class="label-texto"><input type="radio" name="p4" value="incorrecto"> Método de Newton-Raphson</label>
+                <label class="label-texto"><input type="radio" name="p4" value="correcto"> Método de Lagrange</label>
+                <label class="label-texto"><input type="radio" name="p4" value="incorrecto"> Algoritmo de Dijkstra</label>
             </div>
 
             <div class="pregunta">
                 <p>5. ¿Qué método numérico es útil para resolver ecuaciones diferenciales?</p>
-                <label><input type="radio" name="p5" value="incorrecto"> Método de Gauss</label>
-                <label><input type="radio" name="p5" value="correcto"> Método de Euler</label>
-                <label><input type="radio" name="p5" value="incorrecto"> Algoritmo de Prim</label>
+                <label class="label-texto"><input type="radio" name="p5" value="incorrecto"> Método de Gauss</label>
+                <label class="label-texto"><input type="radio" name="p5" value="correcto"> Método de Euler</label>
+                <label class="label-texto"><input type="radio" name="p5" value="incorrecto"> Algoritmo de Prim</label>
             </div>
 
             <button type="button" onclick="calcularResultados()">Enviar respuestas</button>
@@ -116,12 +116,12 @@
 
         <div class="pregunta1">
             <p>1. El método de Bisección es un método numérico para resolver ecuaciones diferenciales. </p>
-            <label>
+            <label class="label-texto">
                 <input type="radio" name="q1" class="entrada-oculta">
                 Verdadero
                 <span class="respuesta incorrecta"> Incorrecto. Se usa para encontrar raíces de ecuaciones.</span>
             </label>
-            <label>
+            <label class="label-texto">
                 <input type="radio" name="q1" class="entrada-oculta">
                 Falso
                 <span class="respuesta correcta"> Correcto. No se usa para ecuaciones diferenciales.</span>
@@ -130,12 +130,12 @@
 
         <div class="pregunta1">
             <p>2. El método de Gauss-Seidel es un método iterativo para resolver sistemas de ecuaciones lineales. </p>
-            <label>
+            <label class="label-texto">
                 <input type="radio" name="q2" class="entrada-oculta">
                 Verdadero
                 <span class="respuesta correcta"> Correcto. Se usa para resolver sistemas de ecuaciones.</span>
             </label>
-            <label>
+            <label class="label-texto">
                 <input type="radio" name="q2" class="entrada-oculta">
                 Falso
                 <span class="respuesta incorrecta"> Incorrecto. Es un método iterativo para sistemas lineales.</span>
@@ -144,12 +144,12 @@
 
         <div class="pregunta1">
             <p>3. El método de Newton-Raphson es un método para interpolación de datos. </p>
-            <label>
+            <label class="label-texto">
                 <input type="radio" name="q3" class="entrada-oculta">
                 Verdadero
                 <span class="respuesta incorrecta"> Incorrecto. Se usa para encontrar raíces de ecuaciones.</span>
             </label>
-            <label>
+            <label class="label-texto">
                 <input type="radio" name="q3" class="entrada-oculta">
                 Falso
                 <span class="respuesta correcta"> Correcto. No se usa para interpolación.</span>
@@ -158,12 +158,12 @@
 
         <div class="pregunta1">
             <p>4. La interpolación de Lagrange es un método para encontrar una función que pase por un conjunto de puntos. </p>
-            <label>
+            <label class="label-texto">
                 <input type="radio" name="q4" class="entrada-oculta">
                 Verdadero
                 <span class="respuesta correcta"> Correcto. Se usa para interpolación.</span>
             </label>
-            <label>
+            <label class="label-texto">
                 <input type="radio" name="q4" class="entrada-oculta">
                 Falso
                 <span class="respuesta incorrecta"> Incorrecto. Sí es un método de interpolación.</span>
@@ -172,12 +172,12 @@
 
         <div class="pregunta1">
             <p>5. El método de Euler se usa para resolver ecuaciones diferenciales ordinarias. </p>
-            <label>
+            <label class="label-texto">
                 <input type="radio" name="q5" class="entrada-oculta">
                 Verdadero
                 <span class="respuesta correcta"> Correcto. Se usa para resolver ecuaciones diferenciales.</span>
             </label>
-            <label>
+            <label class="label-texto">
                 <input type="radio" name="q5" class="entrada-oculta">
                 Falso
                 <span class="respuesta incorrecta"> Incorrecto. Sí se usa para ecuaciones diferenciales.</span>
@@ -205,7 +205,7 @@
     </div>
     </div>
     <footer class="footer">
-        <p>© 2025 Ingeniería de Sistemas</p>
+        <p>© 2025  OVI - Métodos Numéricos</p>
     </footer>
 </body>
 </html>
