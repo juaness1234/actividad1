@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
+    <link rel="stylesheet" href="css/actividad.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <header class="banner">
+            <a href="index.html">
+                <img src="img/Captura de pantalla 2025-03-29 222821.png" alt="Logo">
+            </a>
+        </header>
+
+        <nav class="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">☰</label>
+            
+            <ul class="menu-items">
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#">Indice</a>
+                    <ul class="submenu">
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="metodos.html">Principales Métodos Numéricos</a></li>
+                        <li><a href="implementacion.html">Implementacion</a></li>
+                        <li><a href="Impacto.html">Impacto</a></li>
+                        <li><a href="matlab.html">Matlab</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Multimedia</a>
+                    <ul class="submenu">
+                        <li><a href="multimedia.html#video">Métodos Numéricos - Videos</a></li>
+                        <li><a href="multimedia.html#audio">Métodos Numéricos - Audio</a></li>
+                    </ul>
+                </li>
+                <li><a href="actividad.html">Actividades</a>
+                    <ul class="submenu">
+                        
+                    </ul>
+                </li>
+                <li><a href="autores.html">Autores</a></li>
+            </ul>
+        </nav>
+
+        <div class="contenido">
+            <div class="superior">
+               <br><br><br><br>
+                <h2>Sopa de Letras - Encuentra los Métodos Numéricos</h2>
+                <p>Pasa el mouse sobre las palabras para descubrirlas.</p>
+        
+                <div class="sopa">
+                    <span class="word" data-word="newton">N</span>
+                    <span class="word" data-word="newton">E</span>
+                    <span class="word" data-word="newton">W</span>
+                    <span class="word" data-word="newton">T</span>
+                    <span class="word" data-word="newton">O</span>
+                    <span class="word" data-word="newton">N</span>
+        
+                    <span class="word" data-word="newton">G</span>
+                    <span class="word" data-word="newton">A</span>
+                    <span class="word" data-word="newton">U</span>
+                    <span class="word" data-word="newton">S</span>
+                    <span class="word" data-word="newton">S</span>
+                </div>
+            </div>
+        <br><br><br>
+                <h2 >Cuestionario sobre Métodos Numéricos</h2>
+
+        <form id="formulario">
+            <div class="pregunta">
+                <p>1. ¿Cuál de los siguientes métodos se usa para encontrar raíces de ecuaciones?</p>
+                <label><input type="radio" name="p1" value="incorrecto"> Método de Gauss-Seidel</label>
+                <label><input type="radio" name="p1" value="correcto"> Método de Bisección</label>
+                <label><input type="radio" name="p1" value="incorrecto"> Transformada de Fourier</label>
+            </div>
+
+            <div class="pregunta">
+                <p>2. ¿Qué técnica numérica se basa en la aproximación de derivadas?</p>
+                <label><input type="radio" name="p2" value="correcto"> Método de Euler</label>
+                <label><input type="radio" name="p2" value="incorrecto"> Regresión Lineal</label>
+                <label><input type="radio" name="p2" value="incorrecto"> Integración por partes</label>
+            </div>
+
+            <div class="pregunta">
+                <p>3. ¿Cuál es un método iterativo para resolver sistemas de ecuaciones lineales?</p>
+                <label><input type="radio" name="p3" value="correcto"> Método de Gauss-Seidel</label>
+                <label><input type="radio" name="p3" value="incorrecto"> Método de Bisección</label>
+                <label><input type="radio" name="p3" value="incorrecto"> Transformada de Laplace</label>
+            </div>
+
+            <div class="pregunta">
+                <p>4. ¿Cuál de estos métodos numéricos se usa en interpolación?</p>
+                <label><input type="radio" name="p4" value="incorrecto"> Método de Newton-Raphson</label>
+                <label><input type="radio" name="p4" value="correcto"> Método de Lagrange</label>
+                <label><input type="radio" name="p4" value="incorrecto"> Algoritmo de Dijkstra</label>
+            </div>
+
+            <div class="pregunta">
+                <p>5. ¿Qué método numérico es útil para resolver ecuaciones diferenciales?</p>
+                <label><input type="radio" name="p5" value="incorrecto"> Método de Gauss</label>
+                <label><input type="radio" name="p5" value="correcto"> Método de Euler</label>
+                <label><input type="radio" name="p5" value="incorrecto"> Algoritmo de Prim</label>
+            </div>
+
+            <button type="button" onclick="calcularResultados()">Enviar respuestas</button>
+        </form>
+
+        <div id="resultado"></div>
+        <br><br><br><br><br>
+
+        <h2>Cuestionario: Verdadero o Falso</h2>
+
+        <div class="pregunta1">
+            <p>1. El método de Bisección es un método numérico para resolver ecuaciones diferenciales. </p>
+            <label>
+                <input type="radio" name="q1" class="entrada-oculta">
+                Verdadero
+                <span class="respuesta incorrecta"> Incorrecto. Se usa para encontrar raíces de ecuaciones.</span>
+            </label>
+            <label>
+                <input type="radio" name="q1" class="entrada-oculta">
+                Falso
+                <span class="respuesta correcta"> Correcto. No se usa para ecuaciones diferenciales.</span>
+            </label>
+        </div>
+
+        <div class="pregunta1">
+            <p>2. El método de Gauss-Seidel es un método iterativo para resolver sistemas de ecuaciones lineales. </p>
+            <label>
+                <input type="radio" name="q2" class="entrada-oculta">
+                Verdadero
+                <span class="respuesta correcta"> Correcto. Se usa para resolver sistemas de ecuaciones.</span>
+            </label>
+            <label>
+                <input type="radio" name="q2" class="entrada-oculta">
+                Falso
+                <span class="respuesta incorrecta"> Incorrecto. Es un método iterativo para sistemas lineales.</span>
+            </label>
+        </div>
+
+        <div class="pregunta1">
+            <p>3. El método de Newton-Raphson es un método para interpolación de datos. </p>
+            <label>
+                <input type="radio" name="q3" class="entrada-oculta">
+                Verdadero
+                <span class="respuesta incorrecta"> Incorrecto. Se usa para encontrar raíces de ecuaciones.</span>
+            </label>
+            <label>
+                <input type="radio" name="q3" class="entrada-oculta">
+                Falso
+                <span class="respuesta correcta"> Correcto. No se usa para interpolación.</span>
+            </label>
+        </div>
+
+        <div class="pregunta1">
+            <p>4. La interpolación de Lagrange es un método para encontrar una función que pase por un conjunto de puntos. </p>
+            <label>
+                <input type="radio" name="q4" class="entrada-oculta">
+                Verdadero
+                <span class="respuesta correcta"> Correcto. Se usa para interpolación.</span>
+            </label>
+            <label>
+                <input type="radio" name="q4" class="entrada-oculta">
+                Falso
+                <span class="respuesta incorrecta"> Incorrecto. Sí es un método de interpolación.</span>
+            </label>
+        </div>
+
+        <div class="pregunta1">
+            <p>5. El método de Euler se usa para resolver ecuaciones diferenciales ordinarias. </p>
+            <label>
+                <input type="radio" name="q5" class="entrada-oculta">
+                Verdadero
+                <span class="respuesta correcta"> Correcto. Se usa para resolver ecuaciones diferenciales.</span>
+            </label>
+            <label>
+                <input type="radio" name="q5" class="entrada-oculta">
+                Falso
+                <span class="respuesta incorrecta"> Incorrecto. Sí se usa para ecuaciones diferenciales.</span>
+            </label>
+        </div>
+    </div>
+    </div>
+
+    
+
+
+
+
+<br>
+
+
+    <script src="actividad.js"></script>
+
+
+
+
+<br><br><br><br>
+
+
+    </div>
+    </div>
+    <footer class="footer">
+        <p>© 2025 Ingeniería de Sistemas</p>
+    </footer>
+</body>
+</html>
+
