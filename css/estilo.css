@@ -10,6 +10,7 @@
     overflow-x: hidden;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    scroll-behavior: smooth;
   }
   
   .container {
@@ -98,7 +99,7 @@
     display: block;
     color: white;
     text-decoration: none;
-    transition: background 0.3s ease;
+    
   }
   
   .submenu a:hover {
@@ -168,7 +169,27 @@
     margin-top: auto;
   }
   
+  .texto-multimedia{
+    color: rgb(74, 78, 82);
+    font-size: 20px;
+  }
+  .audio-container{
+    display: flex;
+    justify-content: center;
+  }
   
+
+.video-container iframe {
+  width: 100%;
+  height: 500px;
+  aspect-ratio: 16/9;
+  display: flex;
+  justify-items: center;
+  
+}
+
+
+
   @media (max-width: 768px) {
     .menu-icon {
         display: block;
